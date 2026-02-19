@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gregor Boršič – Življenjepis</title>
+<meta name="description" content="Gregor Boršič – 15+ let izkušenj v prodaji, svetovanju in organizaciji.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* LIGHT */
+  --bg:#f6f7fb;
+  --bg2:#ffffff;
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --text:#0f172a;
+  --muted:#475569;
+  --btn:#0f172a;
+  --btnText:#ffffff;
+  --accent:#2563eb;
+  --shadow:0 14px 38px rgba(15,23,42,.10);
+  --radius:20px;
+}
+[data-theme="dark"]{
+  /* DARK */
+  --bg:#0b1220;
+  --bg2:#0e1627;
+  --card:#111c2e;
+  --border:#1f2a40;
+  --text:#e6edf7;
+  --muted:#9aa6bd;
+  --btn:#1f2a40;
+  --btnText:#ffffff;
+  --accent:#2563eb;
+  --shadow:0 16px 44px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Inter",system-ui,-apple-system,Segoe UI,Arial,Helvetica,sans-serif;
+  background:linear-gradient(180deg,var(--bg),var(--bg2));
+  color:var(--text);
+}
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px 80px;
+}
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  margin-bottom:34px;
+}
+.name{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-0.02em;
+}
+.subtitle{
+  font-size:15px;
+  color:var(--muted);
+  margin-top:6px;
+}
+.theme-btn{
+  width:46px;
+  height:46px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  user-select:none;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:34px;
+  margin-bottom:26px;
+}
+h1{
+  font-size:36px;
+  margin:0 0 12px;
+  font-weight:800;
+  letter-spacing:-0.03em;
+}
+h2{
+  font-size:20px;
+  margin:0 0 14px;
+  letter-spacing:-0.01em;
+}
+p{
+  color:var(--muted);
+  line-height:1.75;
+  margin:0;
+}
+.badges{ margin-top:18px; }
+.badge{
+  display:inline-block;
+  padding:7px 14px;
+  margin:6px 6px 0 0;
+  border-radius:999px;
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--muted);
+  background:transparent;
+}
+
+.actions{
+  margin-top:22px;
+  display:grid;
+  gap:14px;
+  grid-template-columns:1fr;
+}
+@media (min-width:900px){
+  .actions{ grid-template-columns:1fr 1fr 1fr; }
+}
+
+.btn{
+  height:56px;
+  border-radius:16px;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-decoration:none;
+  letter-spacing:-0.01em;
+  transition:transform .12s ease, opacity .12s ease, border-color .12s ease;
+  white-space:nowrap;
+}
+.btn:hover{ transform:translateY(-1px); opacity:.95; }
+
+.btn-solid{
+  background:var(--btn);
+  color:var(--btnText);
+  border:1px solid var(--btn);
+}
+.btn-solid:hover{
+  border-color:var(--accent);
+}
+
+.btn-outline{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+}
+.btn-outline:hover{
+  border-color:var(--accent);
+}
+
+.grid{
+  display:grid;
+  gap:22px;
+}
+@media (min-width:900px){
+  .grid{ grid-template-columns:1.2fr .8fr; }
+}
+
+ul{
+  padding-left:20px;
+  line-height:1.75;
+  margin:0;
+}
+li{ margin:10px 0; }
+
+footer{
+  margin-top:56px;
+  text-align:center;
+  font-size:14px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="top">
+    <div>
+      <div class="name">Gregor Boršič</div>
+      <div class="subtitle">Prodaja · svetovanje · ponudbe · naročila · organizacija</div>
+    </div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Preklopi temo">🌙</button>
+  </div>
+
+  <div class="card">
+    <h1>Življenjepis</h1>
+    <p>
+      Zanesljiv, samostojen in komunikativen. Več kot 15 let izkušenj v prodaji,
+      delu s strankami in organizaciji. Izkušnje iz trgovine, turizma in podjetništva
+      (priprava ponudb, spremljanje naročil, komunikacija s kupci).
+    </p>
+
+    <div class="badges">
+      <span class="badge">Rogatec</span>
+      <span class="badge">Vozniški izpit B</span>
+      <span class="badge">MS Office</span>
+      <span class="badge">Shopify / WordPress</span>
+      <span class="badge">EN / DE (pasivno) / HR</span>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-solid" href="tel:+38641320944">📞 041 320 944</a>
+      <a class="btn btn-outline" href="mailto:gregor.borsic@gmail.com">✉️ gregor.borsic@gmail.com</a>
+      <a class="btn btn-solid" href="/gbcv.pdf" target="_blank" rel="noopener">📄 Prenesi CV (PDF)</a>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>Delovne izkušnje</h2>
+      <ul>
+        <li><b>2025</b> – Muzej na prostem Rogatec · receptor · vodja skupin · vodič</li>
+        <li><b>2012–2023</b> – Svetovanje Gregor Boršič s.p. · samozaposlen (spletna prodaja, ponudbe, naročila, logistika)</li>
+        <li><b>2010–2012</b> – Terme Olimia d.d. · receptor / prodajnik</li>
+        <li><b>2005–2010</b> – Lesnina d.d. · prodajalec</li>
+        <li><b>2003–2004</b> – Pristan d.o.o. · gospodar objekta</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Znanja</h2>
+      <ul>
+        <li>Prodajno svetovanje in delo s strankami</li>
+        <li>Priprava ponudb in spremljanje naročil</li>
+        <li>MS Office (Word, Excel, Outlook)</li>
+        <li>Shopify, WordPress</li>
+        <li>Organizacija in administracija</li>
+      </ul>
+
+      <h2 style="margin-top:22px;">Jeziki</h2>
+      <ul>
+        <li>Angleščina – dobro (govorno in pisno)</li>
+        <li>Nemščina – pasivno znanje</li>
+        <li>Hrvaščina – dobro</li>
+      </ul>
+
+      <h2 style="margin-top:22px;">Izobrazba</h2>
+      <ul>
+        <li>Srednja ekonomska šola – Ekonomsko komercialni tehnik</li>
+        <li>Fakulteta za management Koper – izredno izobraževanje</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>© 2026 Gregor Boršič</footer>
+
+</div>
+
+<script>
+const btn = document.getElementById("themeBtn");
+
+function setTheme(theme){
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
+  btn.textContent = theme === "dark" ? "☀️" : "🌙";
+}
+
+const saved = localStorage.getItem("theme");
+if(saved){
+  setTheme(saved);
+} else {
+  // default: dark looks premium, but you can change to "light" if you want
+  setTheme("dark");
+}
+
+function toggleTheme(){
+  const cur = document.documentElement.getAttribute("data-theme") || "dark";
+  setTheme(cur === "dark" ? "light" : "dark");
+}
+</script>
+
+</body>
+</html>
