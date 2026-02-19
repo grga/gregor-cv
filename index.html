@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gregor Boršič – Življenjepis</title>
+<meta name="description" content="Gregor Boršič – 15+ let izkušenj v prodaji, svetovanju in organizaciji.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b1220;
+  --card:#111c2e;
+  --border:#1f2a40;
+  --text:#e6edf7;
+  --muted:#9aa6bd;
+  --accent:#2563eb;
+  --radius:20px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Inter",system-ui;
+  background:linear-gradient(180deg,#0b1220,#0e1627);
+  color:var(--text);
+}
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px 80px;
+}
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+.name{
+  font-size:28px;
+  font-weight:800;
+}
+.subtitle{
+  font-size:15px;
+  color:var(--muted);
+  margin-top:6px;
+}
+.theme{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#111c2e;
+  border:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:35px;
+  margin-bottom:30px;
+}
+h1{
+  font-size:36px;
+  margin:0 0 15px;
+  font-weight:800;
+}
+h2{
+  font-size:20px;
+  margin-bottom:15px;
+}
+p{
+  color:var(--muted);
+  line-height:1.7;
+}
+.badges{
+  margin-top:18px;
+}
+.badge{
+  display:inline-block;
+  padding:7px 14px;
+  margin:6px 6px 0 0;
+  border-radius:999px;
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--muted);
+}
+
+.actions{
+  margin-top:25px;
+  display:grid;
+  gap:15px;
+  grid-template-columns:1fr;
+}
+@media (min-width:900px){
+  .actions{ grid-template-columns:1fr 1fr 1fr; }
+}
+
+.btn{
+  height:56px;
+  border-radius:14px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-decoration:none;
+  transition:all .15s ease;
+}
+
+.btn-solid{
+  background:#1f2a40;
+  color:#fff;
+  border:1px solid #1f2a40;
+}
+.btn-solid:hover{
+  background:#2563eb;
+  border-color:#2563eb;
+}
+
+.btn-outline{
+  background:transparent;
+  border:1px solid #3a4a66;
+  color:#fff;
+}
+.btn-outline:hover{
+  border-color:#2563eb;
+  color:#2563eb;
+}
+
+.grid{
+  display:grid;
+  gap:25px;
+}
+@media (min-width:900px){
+  .grid{ grid-template-columns:1.2fr .8fr; }
+}
+
+ul{
+  padding-left:20px;
+  line-height:1.7;
+}
+li{
+  margin:10px 0;
+}
+
+footer{
+  margin-top:60px;
+  text-align:center;
+  font-size:14px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="top">
+    <div>
+      <div class="name">Gregor Boršič</div>
+      <div class="subtitle">Prodaja · svetovanje · ponudbe · naročila · organizacija</div>
+    </div>
+    <div class="theme">☀️</div>
+  </div>
+
+  <div class="card">
+    <h1>Življenjepis</h1>
+    <p>
+      Zanesljiv, samostojen in komunikativen. Več kot 15 let izkušenj v prodaji,
+      delu s strankami in organizaciji. Izkušnje iz trgovine, turizma in podjetništva
+      (priprava ponudb, spremljanje naročil, komunikacija s kupci).
+    </p>
+
+    <div class="badges">
+      <span class="badge">Rogatec</span>
+      <span class="badge">Vozniški izpit B</span>
+      <span class="badge">MS Office</span>
+      <span class="badge">Shopify / WordPress</span>
+      <span class="badge">EN / DE (pasivno) / HR</span>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-solid" href="tel:+38641320944">📞 041 320 944</a>
+      <a class="btn btn-outline" href="mailto:gregor.borsic@gmail.com">✉️ gregor.borsic@gmail.com</a>
+      <a class="btn btn-solid" href="/gbcv.pdf" target="_blank">📄 Prenesi CV (PDF)</a>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>Delovne izkušnje</h2>
+      <ul>
+        <li><b>2025</b> – Muzej na prostem Rogatec · receptor · vodja skupin · vodič</li>
+        <li><b>2012–2023</b> – Svetovanje Gregor Boršič s.p. · samozaposlen (spletna prodaja, ponudbe, naročila, logistika)</li>
+        <li><b>2010–2012</b> – Terme Olimia d.d. · receptor / prodajnik</li>
+        <li><b>2005–2010</b> – Lesnina d.d. · prodajalec</li>
+        <li><b>2003–2004</b> – Pristan d.o.o. · gospodar objekta</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Znanja</h2>
+      <ul>
+        <li>Prodajno svetovanje in delo s strankami</li>
+        <li>Priprava ponudb in spremljanje naročil</li>
+        <li>MS Office (Word, Excel, Outlook)</li>
+        <li>Shopify, WordPress</li>
+      </ul>
+
+      <h2 style="margin-top:25px;">Jeziki</h2>
+      <ul>
+        <li>Angleščina – dobro (govorno in pisno)</li>
+        <li>Nemščina – pasivno znanje</li>
+        <li>Hrvaščina – dobro</li>
+      </ul>
+
+      <h2 style="margin-top:25px;">Izobrazba</h2>
+      <ul>
+        <li>Srednja ekonomska šola – Ekonomsko komercialni tehnik</li>
+        <li>Fakulteta za management Koper – izredno izobraževanje</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>© 2026 Gregor Boršič</footer>
+
+</div>
+</body>
+</html>
